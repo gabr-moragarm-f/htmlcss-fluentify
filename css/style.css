@@ -27,6 +27,12 @@ nav li{
   float: left;
 }
 
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .button{
   background: #7CBB02;
   text-transform: uppercase;
@@ -47,7 +53,6 @@ header{
 
 header nav{
   height: 50px;
-  border: 1px solid black;
   line-height: 50px
 }
 
@@ -89,4 +94,18 @@ header nav ul:last-child li:nth-child(2), header nav ul:last-child li:last-child
   width: 600px;
   font-size: 60px;
   margin-bottom: 20px;
+}
+
+.top-main{
+  background: #D3D3D3;
+}
+
+.top-content{
+  text-align: center;
+  padding: 40px 0;
+}
+
+.subtitle{
+  padding: 10px 0;
+  color: #808080;
 }
