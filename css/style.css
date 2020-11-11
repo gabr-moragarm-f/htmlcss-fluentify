@@ -1,5 +1,92 @@
+/* common settings */
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+a, a:link, a:visited, a:hover, a:active{
+  text-decoration: none;
+  color: inherit;
+}
+
+nav li{
+  display: inline-block;
+  text-transform:uppercase;
+}
+/* /common settings */
+
+/* utilities */
+
+.width-limits{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.float-l{
+  float: left;
+}
+
+.button{
+  background: #7CBB02;
+  text-transform: uppercase;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 5px;
+}
+/* /utilities */
+
+.container{
+  min-width: 1200px;
+}
+
+header{
+  background: #0C325A;
+  color: #fff;
+}
+
+header nav{
+  height: 50px;
+  border: 1px solid black;
+  line-height: 50px
+}
+
+.logo{
+  padding-right: 30px;
+}
+
+header nav ul{
+}
+
+header nav li{
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+header nav ul:last-child{
+  float: right;
+}
+
+.login{
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 8px 20px;
+}
+
+header nav ul:last-child li:nth-child(2), header nav ul:last-child li:last-child{
+  line-height: normal;
+}
+
+.header-background-img{
+  margin-top: 100px;
+  height: 500px;
+  background: url("../img/image.png") no-repeat right;
+  background-size: contain;
+  padding-top: 100px
+}
+
+.header-text{
+  width: 600px;
+  font-size: 60px;
+  margin-bottom: 20px;
 }
